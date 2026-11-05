@@ -97,4 +97,4 @@ Some flags have an order of precedence:
 - If `-flintlock-hosts` OR `-address` are set, the tool will not look up the
   required connection/test info from the terraform output.
 
-[capmvm-e2e]: https://github.com/weaveworks-liquidmetal/cluster-api-provider-microvm/test/e2e
+[capmvm-e2e]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm/test/e2e

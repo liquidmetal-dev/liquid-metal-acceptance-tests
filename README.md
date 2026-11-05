@@ -80,7 +80,7 @@ To run the LMATS against non-local bare-metal infrastructure, first clone and
 change into this repo:
 
 ```bash
-git clone https://github.com/weaveworks-liquidmetal/liquid-metal-acceptance-tests
+git clone https://github.com/liquidmetal-dev/liquid-metal-acceptance-tests
 cd liquid-metal-acceptance-tests
 ```
 
@@ -171,7 +171,7 @@ Equinix hosts, and then tell the local E2Es where those hosts are.
 Clone this repo:
 
 ```bash
-git clone https://github.com/weaveworks-liquidmetal/liquid-metal-acceptance-tests
+git clone https://github.com/liquidmetal-dev/liquid-metal-acceptance-tests
 cd liquid-metal-acceptance-tests
 ```
 
@@ -198,12 +198,12 @@ make tf-up
 
 TODO: there is some additional networking needed here to ensure that CAPMVM can
 access the load balancer address of the created workload cluster. I will add it
-at some point. https://github.com/weaveworks-liquidmetal/liquid-metal-acceptance-tests/issues/5
+at some point. https://github.com/liquidmetal-dev/liquid-metal-acceptance-tests/issues/5
 
 Then clone CAPMVM:
 
 ```bash
-git clone https://github.com/weaveworks-liquidmetal/cluster-api-provider-microvm
+git clone https://github.com/liquidmetal-dev/cluster-api-provider-microvm
 cd cluster-api-provider-microvm
 ```
 
@@ -242,11 +242,11 @@ be posted in the `#team-quicksilver` slack channel.
 If anything goes wrong there is a step in the action to remove all the infra.
 I will be exposing an option to keep things around if needed.
 
-[flintlock]: https://github.com/weaveworks-liquidmetal/flintlock
-[capmvm]: https://github.com/weaveworks-liquidmetal/cluster-api-provider-microvm
-[capmvm-e2e]: https://github.com/weaveworks-liquidmetal/cluster-api-provider-microvm/tree/main/test/e2e
-[flintlock-releases]: https://github.com/weaveworks-liquidmetal/flintlock/releases
+[flintlock]: https://github.com/liquidmetal-dev/flintlock
+[capmvm]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm
+[capmvm-e2e]: https://github.com/liquidmetal-dev/cluster-api-provider-microvm/tree/main/test/e2e
+[flintlock-releases]: https://github.com/liquidmetal-dev/flintlock/releases
 [tool]: /cmd
 [tf]: /terraform
-[actions]: https://github.com/weaveworks-liquidmetal/liquid-metal-acceptance-tests/main/workflows/nightly_e2e.yml
-[tf-mod]: https://registry.terraform.io/modules/weaveworks-liquidmetal/liquidmetal/equinix/latest
+[actions]: https://github.com/liquidmetal-dev/liquid-metal-acceptance-tests/blob/main/.github/workflows/nightly_e2e.yml
+[tf-mod]: https://github.com/liquidmetal-dev/terraform-equinix-liquidmetal

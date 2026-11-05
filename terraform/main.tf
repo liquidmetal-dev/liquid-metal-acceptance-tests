@@ -1,6 +1,5 @@
 module "create_devices" {
-  source  = "weaveworks-liquidmetal/liquidmetal/equinix"
-  version = "0.0.5"
+  source  = "git::https://github.com/liquidmetal-dev/terraform-equinix-liquidmetal.git?ref=v0.0.5"
 
   project_name = var.project_name
   public_key = var.public_key
@@ -13,8 +12,7 @@ module "create_devices" {
 }
 
 module "provision_hosts" {
-  source  = "weaveworks-liquidmetal/liquidmetal/equinix//modules/provision-lmats"
-  version = "0.0.5"
+  source  = "git::https://github.com/liquidmetal-dev/terraform-equinix-liquidmetal.git//modules/provision-lmats?ref=v0.0.5"
 
   private_key_path = var.private_key_path
   microvm_host_device_count = var.microvm_host_device_count

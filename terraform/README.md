@@ -92,4 +92,4 @@ The down command will remove everything. If the bond port is deleted before the
 devices have actually come down it may fail, so just call `make tf-down` a second
 time and it will clear it.
 
-[tf-mod]: https://registry.terraform.io/modules/weaveworks-liquidmetal/liquidmetal/equinix/latest
+[tf-mod]: https://github.com/liquidmetal-dev/terraform-equinix-liquidmetal
